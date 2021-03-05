@@ -1,8 +1,8 @@
-baseURL: https://tamacafe.tamatoledo.com/
+baseURL: https://wieting.tamatoledo.com/
 languageCode: en-us
-title: The Tama Cafe
+title: The Wieting Theatre
 theme: vanilla-bootstrap-hugo-theme
-googleAnalytics: UA-187260584-2
+googleAnalytics: #UA-187260584-2
 # googleAnalytics: UA-146526628-3
 # GA4: G-ZSJCQ9CDKM
 
@@ -25,9 +25,9 @@ menu:
     pre: smile
     url: /about
     weight: 14
-  - name: Menu
+  - name: Admissions & Concessions
     pre: clipboard
-    url: /menu
+    url: /admissionconcessions
     weight: 12
   # - name: Tags
   #   pre: tag
@@ -48,22 +48,22 @@ params:
   hideFooter: false
   katex: true
   customCss: "css/custom.css"
-  dropboxURL: "https://dl.dropboxusercontent.com/s/tjhs8m5bpy691id/special.md?dl=0"
+  dropboxURL: ""
   social:
     share:
       facebook:
         switch: true
-        url: "https://www.facebook.com/TheTamaCafe/"
-      linkedin: 
+        url: "https://www.facebook.com/WietingTheatre/"
+      linkedin:
         switch: false
       twitter:
         switch: true
-        url: "https://twitter.com/Tamacafe1"
-      whatsapp: 
+        url: "https://twitter.com/WietingTheatre"
+      whatsapp:
         switch: false
       email:
         switch: true
-        url: "mailto:tamaiowacafe2020@gmail.com"
+        url: "mailto:ToledoWieting@gmail.com"
 
 markup:
   defaultMarkdownHandler: goldmark

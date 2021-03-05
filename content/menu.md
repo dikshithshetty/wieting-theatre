@@ -2,13 +2,7 @@
 
 <div class="centered">
 
-  # Breakfast Served All Day
-  # Daily Lunch Specials
 
-  <div style="border:1px solid red; padding:1em; margin:1em;">
-    <i data-feather="phone"></i>&nbsp;&nbsp;&nbsp;Call <b>(641) 481-7232</b> for carry-out orders.&nbsp;&nbsp;&nbsp;<i data-feather="phone"></i>
-  </div>
-  
 <!--
   <div class="card" style="width: 18rem;">
     <img class="card-img-top" src="TamaCafe.png" alt="Skillets">
@@ -29,7 +23,7 @@
   </div>
 -->
 
-{{% menu-card title="Skillets & Omelets" id="skillets" %}}
+<!-- {{% menu-card title="Skillets & Omelets" id="skillets" %}}
   Build your own skillet, comes with 2 eggs, hash browns, and up to 3 ingredients, and your choice of toast.  _$9.95_  
 
   Fresh made to order 3 egg omelet with up to 3 ingredients and your choice of toast. _$8.95_
@@ -110,4 +104,4 @@
   _$1.50_
 {{% /menu-card %}}
 
-</div>
+</div> -->
