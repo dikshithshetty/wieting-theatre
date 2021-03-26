@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on The Tama Cafe</title>
-    <link>https://tamacafe.tamatoledo.com/post/</link>
-    <description>Recent content in Posts on The Tama Cafe</description>
+    <title>Posts on The Wieting Theatre</title>
+    <link>https://wieting.tamatoledo.com/post/</link>
+    <description>Recent content in Posts on The Wieting Theatre</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Dec 2020 19:57:53 -0600</lastBuildDate><atom:link href="https://tamacafe.tamatoledo.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 13 Dec 2020 19:57:53 -0600</lastBuildDate><atom:link href="https://wieting.tamatoledo.com/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>README.md</title>
-      <link>https://tamacafe.tamatoledo.com/readme/</link>
+      <link>https://wieting.tamatoledo.com/readme/</link>
       <pubDate>Sun, 13 Dec 2020 19:57:53 -0600</pubDate>
       
-      <guid>https://tamacafe.tamatoledo.com/readme/</guid>
-      <description>The Tama Cafe serves homestyle food with that classic American taste we all remember as a kid. Come satisfy your taste buds! Specialties include hand cut hash browns and hand-breaded tenderloins.
-Mackenzie&amp;rsquo;s Project While my name is attached to this repository and project, it&amp;rsquo;s really intended to be a vehicle for my daughter, Mackenzie Grace McFate.</description>
+      <guid>https://wieting.tamatoledo.com/readme/</guid>
+      <description>Mackenzie&amp;rsquo;s Project While my name is attached to this repository and project, it&amp;rsquo;s really intended to be a vehicle for my daughter, Mackenzie Grace McFate.</description>
     </item>
     
   </channel>

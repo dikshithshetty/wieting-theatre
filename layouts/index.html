@@ -12,6 +12,7 @@
 {{ end }}
 
 </div>
+
 <!-- Start Wieting code -->
 <div role="main" class="main-container container js-quickedit-main-content">
     <div class="row">
@@ -20,7 +21,7 @@
           <section class="views-element-container block block-views block-views-blockupcoming-shows-block-2 clearfix" id="block-wieting-theme-views-block-upcoming-shows-block-2-2">
 
             <div class="form-group">
-              <div class="view view-upcoming-shows view-id-upcoming_shows view-display-id-block_2 js-view-dom-id-6928eec709ea520b6d406845090b44505cc44ae927f64de35b0eaba8e94804cb">
+              <div class="view view-upcoming-shows view-id-upcoming_shows">
 
                 <div class="view-header">
                   <div class="scroll-left">
@@ -31,72 +32,13 @@
                 </div>
 
                 <div class="view-content">
+                  <!-- Display our marquee, a grid of upcoming shows -->
                   <div class="one-sheet-views-grid">
-                    <div class="views-row one-sheet-element">
-                      <div class="views-field views-field-field-performance-times">
-                        <div class="field-content">
-                          <span class="views-field"><time datetime="2021-12-25T01:00:00Z">Dec 24</time>
-                          </span>
-                        </div>
-                      </div>
-
-                      <div class="views-field views-field-field-show-rating">
-                        <div class="field-content">
-                          <span class="views-field">Not Rated</span>
-                        </div>
-                      </div>
-
-                      <div class="views-field views-field-field-one-sheet">
-                        <div class="field-content">
-                          <span class="views-field">
-                            <a href="/node/8166" hreflang="und"><img src="images/updated.jpg" alt="" typeof="foaf:Image" class="img-responsive"></a>
-                          </span>
-                        </div>
-                      </div>
-
-                      <div class="views-field views-field-title">
-                        <span class="field-content">
-                          <span class="views-field">TBD</span>
-                        </span>
-                      </div>
-                    </div>
+                    {{ range where .Site.Pages "Type" "show" }}
+                    	{{ partial "marquee-show.html" . }}
+                    {{ end }}
                   </div>
                 </div>
-          </section>
-
-          <section class="simplenews-subscriptions-block-wieting-word-subscribe simplenews-subscriber-form block block-simplenews block-simplenews-subscription-block clearfix" data-drupal-selector="simplenews-subscriptions-block-wieting-word-subscribe" id="block-simplenewssubscription">
-            <h2 class="block-title">Subscribe to the Wieting Word!</h2>
-            <form action="/" method="post" id="simplenews-subscriptions-block-wieting-word-subscribe" accept-charset="UTF-8">
-
-              <div class="field--type-simplenews-subscription field--name-subscriptions field--widget-simplenews-subscription-select form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-subscriptions-wrapper" id="edit-subscriptions-wrapper"></div>
-
-              <div id="edit-message" class="form-item js-form-item form-type-item js-form-type-item form-item-message js-form-item-message form-no-label form-group">
-                Stay informed - subscribe to our newsletter.
-              </div>
-
-              <input autocomplete="off" data-drupal-selector="form-aawno4locfd4wzrmzirbgbzfoxocmvalco-jw6ccytu" type="hidden" name="form_build_id" value="form-Aawno4locFd4WZRmZIrbgBzFoxoCMvAlcO_Jw6ccytU"><input data-drupal-selector="edit-simplenews-subscriptions-block-wieting-word-subscribe" type="hidden" name="form_id" value="simplenews_subscriptions_block_wieting_word_subscribe">
-                <div class="field--type-email field--name-mail field--widget-email-default form-group js-form-wrapper form-wrapper" data-drupal-selector="edit-mail-wrapper" id="edit-mail-wrapper">
-                  <div class="form-item js-form-item form-type-email js-form-type-email form-item-mail-0-value js-form-item-mail-0-value form-group">
-                    <label for="edit-mail-0-value" class="control-label js-form-required form-required">Email
-                    </label>
-
-                  <input data-drupal-selector="edit-mail-0-value" class="form-email required form-control" type="email" id="edit-mail-0-value" name="mail[0][value]" value="" size="60" maxlength="254" placeholder="" required="required" aria-required="true" title="" data-toggle="tooltip" data-original-title="The subscriber's email address.">
-                </div>
-              </div>
-              <div data-drupal-selector="edit-actions" class="form-actions form-group js-form-wrapper form-wrapper" id="edit-actions"><button data-drupal-selector="edit-subscribe" class="button js-form-submit form-submit btn-default btn" type="submit" id="edit-subscribe" name="op" value="Subscribe">Subscribe</button>
-              </div>
-            </form>
-          </section>
-        </div>
-      </div>
-        <section class="col-sm-12">
-          <a id="main-content"></a>
-            <div class="region region-content">
-              <div class="views-element-container form-group">
-                <div class="view view-frontpage view-id-frontpage view-display-id-page_1 js-view-dom-id-f62ddea501441f3e6fee5c5c0c61c3c6d1e4148d144e8a22b5cd4cf6778ce516">
-                </div>
-              </div>
-            </div>
           </section>
         </div>
       </div>

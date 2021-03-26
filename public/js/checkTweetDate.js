@@ -1,11 +1,22 @@
 function checkTweetDate( ) {
-    var pubDate = Date.parse(document.getElementsByTagName('time')[0].getAttribute('datetime'));
-    console.log("pubDate's value is: " + pubDate);    // returns a parsed date
-    var TodaysDate = Date.parse(Date());
-    document.getElementById("TodaysDate").innerHTML = TodaysDate;
-    if (pubDate < TodaysDate) {
-      alert("Stale");
-    } else {
-      alert("Current");
-    }
+  var card = document.getElementsByClassName('timeline-card')[0];
+  var iframe = document.getElementById("twitter-widget-0");
+  //console.log(iframe);
+  var metadata = iframe.contentWindow.document.getElementsByClassName('timeline-Tweet-metadata')[0];
+  //console.log(metadata);
+  var target = metadata.getElementsByTagName('time')[0];
+  //console.log(target);
+  var pubTime = Date.parse(target.getAttribute('datetime'));
+  //console.log(pubTime);
+
+  var now = Date.parse(Date());
+  //console.log(now);
+
+  var diff = now - pubTime;
+
+  // check if tweet is more than 12 hours old
+  if (diff > 12*60*60*1000) {
+    //alert("Tweet is stale");
+    card.style.display = "none";
+  }
 }

@@ -114,3 +114,15 @@ ul.share-icons li > * .label {
 .share-btn.pinterest:hover   { background: #AD0000; }
 .share-btn.reddit:hover      { background: #e54e00; }
 .share-btn.email:hover       { background: #c60000; }
+
+/* Elements below written for menu-card shortcode */
+
+.menu-card {
+  width: 90%;
+  border: 3px solid black;
+  margin: 5%;
+}
+
+.card-img-top {
+  padding: 5px 5px 0 5px;
+}
