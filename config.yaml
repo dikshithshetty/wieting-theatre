@@ -1,4 +1,4 @@
-baseURL: https://wieting.tamatoledo.net/
+# baseURL: https://wieting.tamatoledo.net
 languageCode: en-us
 title: The Wieting Theatre
 theme: vanilla-bootstrap-hugo-theme
