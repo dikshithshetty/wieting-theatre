@@ -42,7 +42,7 @@ params:
   showActiveNav: true
   containerMaxWidth: 1200px
   dateFormat: Jan 2, 2006
-  homeText: Welcome to the online home of Iowa's Tama Cafe.
+  homeText: Welcome to the NEW online home of Toledo's Wieting Theatre.
   footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
   hideFooter: false
   katex: true
