@@ -48,3 +48,9 @@ div.timeline-card {
   margin-top: 5px;
   margin-bottom: 2em;
 }
+
+body {
+  width: 100%;
+  background: url("/images/BlueGradient.jpg");
+  background-size: cover;
+}
