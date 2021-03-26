@@ -12,6 +12,7 @@
 {{ end }}
 
 </div>
+
 <!-- Start Wieting code -->
 <div role="main" class="main-container container js-quickedit-main-content">
     <div class="row">
@@ -20,7 +21,7 @@
           <section class="views-element-container block block-views block-views-blockupcoming-shows-block-2 clearfix" id="block-wieting-theme-views-block-upcoming-shows-block-2-2">
 
             <div class="form-group">
-              <div class="view view-upcoming-shows view-id-upcoming_shows view-display-id-block_2 js-view-dom-id-6928eec709ea520b6d406845090b44505cc44ae927f64de35b0eaba8e94804cb">
+              <div class="view view-upcoming-shows view-id-upcoming_shows">
 
                 <div class="view-header">
                   <div class="scroll-left">
@@ -31,35 +32,11 @@
                 </div>
 
                 <div class="view-content">
+                  <!-- Display our marquee, a grid of upcoming shows -->
                   <div class="one-sheet-views-grid">
-                    <div class="views-row one-sheet-element">
-                      <div class="views-field views-field-field-performance-times">
-                        <div class="field-content">
-                          <span class="views-field"><time datetime="2021-12-25T01:00:00Z">Dec 24</time>
-                          </span>
-                        </div>
-                      </div>
-
-                      <div class="views-field views-field-field-show-rating">
-                        <div class="field-content">
-                          <span class="views-field">Not Rated</span>
-                        </div>
-                      </div>
-
-                      <div class="views-field views-field-field-one-sheet">
-                        <div class="field-content">
-                          <span class="views-field">
-                            <a href="/node/8166" hreflang="und"><img src="images/updated.jpg" alt="" typeof="foaf:Image" class="img-responsive"></a>
-                          </span>
-                        </div>
-                      </div>
-
-                      <div class="views-field views-field-title">
-                        <span class="field-content">
-                          <span class="views-field">TBD</span>
-                        </span>
-                      </div>
-                    </div>
+                    {{ range where .Site.Pages "Type" "show" }}
+                    	{{ partial "marquee-show.html" . }}
+                    {{ end }}
                   </div>
                 </div>
           </section>

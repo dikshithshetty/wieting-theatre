@@ -36,8 +36,7 @@ div.from-dbox p img {
 }
 
 div.timeline-card {
-  /* display: flex; */
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   background: whitesmoke;
@@ -48,4 +47,18 @@ div.timeline-card {
   padding: 1em;
   margin-top: 5px;
   margin-bottom: 2em;
+}
+
+/* Wieting changes and additions */
+
+body {
+  width: 100%;
+  background: url("/images/BlueGradient.jpg");
+  background-size: cover;
+}
+
+div.view-content {
+  width: 100%;
+  background: url("/images/WietingBrickFront.jpg");
+  background-size: cover;
 }

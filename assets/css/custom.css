@@ -49,8 +49,32 @@ div.timeline-card {
   margin-bottom: 2em;
 }
 
+/* Wieting changes and additions */
+
 body {
   width: 100%;
   background: url("/images/BlueGradient.jpg");
   background-size: cover;
+}
+
+div.view-content {
+  width: 86%;
+  margin-left: 7%;
+  background: url("/images/WietingBrickFront.png");
+}
+
+div.views-row.one-sheet-element {
+  display: inline-block;
+  text-align: center;
+}
+
+div.views-field {
+  text-align: center;
+  background: antiquewhite;
+  color: #000000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin: 6px 3px;
+  margin-bottom: 6px;
 }
