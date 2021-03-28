@@ -116,3 +116,68 @@ div.marquee-foundation {
   padding: 18px;
   text-align: center;
 }
+
+div.wieting_banner {
+  display: block;
+  width: 100%;
+  background: #dce1c9;
+  color: black;
+  padding: 1px 10px;
+  font-family: Georgia,"Times New Roman",Times,serif;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin-bottom: 10px;
+}
+
+div.site-name {
+  font-size: 2em;
+}
+
+div.site-info {
+  margin-left: 2em;
+  font-weight: bold;
+}
+
+.site-info ul { display:inline-block; padding:0; text-align:center }
+.site-info li { display:inline }
+.site-info li a { white-space:nowrap }
+.site-info li:after { content:" "; letter-spacing:1em; background:center center no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMkMEa+wAAAAnSURBVBhXY/Dz89MA4sNA/B9Ka4AEYQIwfBgkiCwAxjhVopnppwEApxQqhnyQ+VkAAAAASUVORK5CYII=); }
+
+ul.show-times {
+  list-style-position: inside;  
+}  
+
+div.synopsis {
+  font-size: 2rem;
+}
+
+.field--item-bold {
+  font-weight: bold;
+}
+.show-container {
+  margin: auto;
+  padding: 10px;
+}
+
+.show-left-block {
+  width: 15%;
+  float: left;
+  width: auto;
+  vertical-align: top;
+  margin-right: 10px;
+  min-width: 185px;
+}
+
+.show-right-block {
+  margin-left: 15%;
+  height: 200px;
+  vertical-align: top;
+}
+
+div.field--name-field-one-sheet img {
+  display: block;
+  border: 2px solid black;
+  border-radius: 3px;
+}

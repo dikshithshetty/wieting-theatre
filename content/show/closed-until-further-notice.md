@@ -17,9 +17,14 @@ imdbURL:
 studio: 
 studioFee: 
 studioPercentage: 
+
 performances:
-  - first
-  - second
-  - last
+  - performance: 
+    date: 2021-03-28T19:00:00-05:00
+    format: 2D
+  - performance: 
+    date: 2021-03-29T15:00:00-05:00
+    format: 3D
+    note: This is a special matinee showing.
 ---
 No feature has been booked yet.

@@ -1,0 +1,53 @@
+{{ define "main" }}
+  {{ `<!-- hugo: main defined in layouts/show/single.html -->` | safeHTML }}
+
+    <div class="wieting_banner">
+      <div class="site-name">The Wieting Theatre</div>
+      <div class="site-info">
+        <ul>
+          <li class="site-address">101&nbsp;South&nbsp;Church&nbsp;Street, Toledo,&nbsp;Iowa</li>
+          <li class="site-phone">(641)&nbsp;484-4440</li>
+          <li class="site-email">ToledoWieting@gmail.com</li>
+        </ul>  
+      </div>
+    </div>  
+
+    <div class="show-title">
+      <h1>{{ .Title }}</h1>
+    </div>
+      
+    <div class="content">
+      <div class="show-container">
+        <div class="show-left-block">
+          <div class="field field--name-field-one-sheet field--type-image">
+            <img src="/images/show/{{ .Params.oneSheet }}" width="320" height="414" alt="" typeof="foaf:Image" class="img-responsive" />
+          </div>
+        </div>  
+        <div class="show-right-block">
+          <hr/>
+          <div class="remaining_details">
+            <div class="field field--name-field-performance-times field--type-datetime">
+              <ul class="show-times">
+                {{ range .Params.performances }}
+                  <li class="field--item">{{ . }}</li>
+                {{ end }}    
+              </ul>  
+              <hr/>
+              <div class="synopsis">{{ .Content }}</div>
+              <hr/>
+              <div class="show-rating">
+                <span class="field--label">MPAA Rating: </span>
+                <span class="field--item-bold">{{ .Params.mpaaRating }}</span>
+              </div>
+              <div class="running-time">
+                <span class="field--label">Running Time: </span>
+                <span content="10" class="field--item-bold">{{ .Params.runningTime }} minutes</span>
+              </div>
+            <br/>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+  {{ `<!-- /hugo: main defined in layouts/show/single.html -->` | safeHTML }}
+{{ end }}
