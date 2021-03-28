@@ -79,10 +79,28 @@ div.views-field {
   margin-bottom: 6px;
 }
 
+.jumbotron {
+  padding: 0rem 1rem;
+}
+
 div.scroll-left {
   height: 24px;
   overflow: hidden;
   position: relative;
   font-size: 18px;
   color: red;
+}
+
+div.marquee-foundation {
+  display: block;
+  width: 100%;
+  background: url("/images/WietingSteps.png");
+  background-size: auto;
+  color: #000000;
+  font-weight: 600;
+  font-size: x-large;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 18px;
+  text-align: center;
 }
