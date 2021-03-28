@@ -43,7 +43,8 @@ params:
   showActiveNav: true
   containerMaxWidth: 1200px
   dateFormat: Jan 2, 2006
-  homeText: The Wieting's movie schedule is subject to change without notice.  Please check here often for the latest schedule updates!
+  homeText: The Wieting's schedule is subject to change without notice.
+  #  Please check here often for the latest schedule updates!
   footerText: Made with [Hugo](https://gohugo.io/) & [Vanilla](https://github.com/zwbetz-gh/vanilla-bootstrap-hugo-theme)
   hideFooter: false
   katex: true
