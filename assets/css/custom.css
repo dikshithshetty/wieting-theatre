@@ -83,12 +83,24 @@ div.views-field {
   padding: 0rem 1rem;
 }
 
+/* scroll-left feature per https://dev.to/techthor/pure-css-continuous-horizontal-text-scroll-42a3 */
+
 div.scroll-left {
   height: 24px;
+  font-size: 18px;
+  display: inline-block;
+  white-space: nowrap;
+  animation: floatText 25s infinite linear;
+  padding-left: 125%;  /* Initial offset, which places the text off-screen */
+  color: red;
   overflow: hidden;
   position: relative;
-  font-size: 18px;
-  color: red;
+}
+
+@keyframes floatText {
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 div.marquee-foundation {
