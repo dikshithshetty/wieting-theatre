@@ -78,3 +78,11 @@ div.views-field {
   margin: 6px 3px;
   margin-bottom: 6px;
 }
+
+div.scroll-left {
+  height: 24px;
+  overflow: hidden;
+  position: relative;
+  font-size: 18px;
+  color: red;
+}
