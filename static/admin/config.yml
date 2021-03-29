@@ -1,6 +1,7 @@
 backend:
   name: github
-  repo: SummittDweller/wieting-theatre
+  repo: dikshithshetty/wieting-theatre
+  base_url: https://wieting-theatre-uf7ko.ondigitalocean.app
   branch: main 
   # api_root: https://api.github.com
   # site_domain: https://blog.SummittDweller.com
