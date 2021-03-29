@@ -60,11 +60,13 @@ div.view-content {
   width: 86%;
   margin-left: 7%;
   background: url("/images/WietingBrickFront.png");
+  padding: 1em 0;
 }
 
 div.views-row.one-sheet-element {
   display: inline-block;
   text-align: center;
+  margin-bottom: 1em;
 }
 
 div.views-field {
