@@ -7,8 +7,8 @@ backend:
   # base_url: https://api.netlify.com
   # auth_endpoint: auth
 
-media_folder: 'static/images/show'
-public_folder: ''
+media_folder: 'static/img'
+public_folder: 'img'
 
 collections:
   - name: 'show'

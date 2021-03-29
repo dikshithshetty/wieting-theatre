@@ -7,7 +7,7 @@ draft: false
 
 dateRange: "Until Further Notice"
 shortTitle: "Closed"
-oneSheet: closed-until-further-notice.jpg
+oneSheet: /img/closed-until-further-notice.jpg
 showType: Announcement
 showFormat: "N/A"
 runningTime: 120
