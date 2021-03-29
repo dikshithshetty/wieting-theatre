@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: dikshithshetty/wieting-theatre
-  base_url: https://wieting-theatre-uf7ko.ondigitalocean.app
+  base_url: https://netlifycms-auth-prbel.ondigitalocean.app
   branch: main 
   # api_root: https://api.github.com
   # site_domain: https://blog.SummittDweller.com
