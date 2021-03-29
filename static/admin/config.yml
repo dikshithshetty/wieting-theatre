@@ -8,14 +8,14 @@ backend:
   # auth_endpoint: auth
 
 media_folder: 'static/images/show'
-public_folder: /img
+public_folder: ''
 
 collections:
   - name: 'show'
     label: 'Show'
     folder: 'content/show'
     create: true
-    slug: '{{year}}-{[month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: true
       
@@ -94,7 +94,7 @@ collections:
         reqiured: false
       
       - label: Performances
-        name: performance-list
+        name: performanceList
         widget: object
         
         fields:
@@ -118,17 +118,20 @@ collections:
             name: studio 
             widget: string
             default: "Not Specified"
+            required: false
 
           - label: Studio Fee
             name: studioFee
             widget: number
             default: 0
             hint: "Enter fee in US dollars." 
+            required: false
 
           - label: Studio Percentage
             name : studioPercentage
             widget: number
             default: 0 
+            required: false
                     
       - label: Draft 
         name: draft

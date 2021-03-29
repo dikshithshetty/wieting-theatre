@@ -28,8 +28,16 @@
           <div class="remaining_details">
             <div class="field field--name-field-performance-times field--type-datetime">
               <ul class="show-times">
-                {{ range .Params.performances }}
-                  <li class="field--item">{{ .date }} {{ .note }}</li>
+                {{ range .Params.performanceList.performance }}
+                  <li class="field--item">
+                    {{ dateFormat "Monday - Jan 2 @ 15:04" .date }}
+                    {{ if .format }} 
+                      <b> [{{ .format }}]</b>
+                    {{ end }}
+                    {{ if .note }}   
+                      <br/><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ .note }}</i>
+                    {{ end }}  
+                  </li>
                 {{ end }}    
               </ul>  
               <hr/>
