@@ -22,7 +22,7 @@ studioPercentage: null
 studioFee: null
 showFormat: N/A
 studio: null
-title: Reopening in April 2021
+title: Reopening in April 2021!
 description: The 'description' holds the production notes.
 publishDate: 2020/03/15
 shortTitle: Reopening!
