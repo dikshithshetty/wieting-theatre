@@ -1,0 +1,91 @@
+backend:
+  name: github
+  repo: SummittDweller/wieting-theatre
+  branch: main 
+  # api_root: https://api.github.com
+  # site_domain: https://blog.SummittDweller.com
+  # base_url: https://api.netlify.com
+  # auth_endpoint: auth
+
+media_folder: 'static/images/show'
+public_folder: /img
+
+collections:
+  - name: 'show'
+    label: 'Show'
+    folder: 'content/show'
+    create: true
+    slug: '{{year}}-{[month}}-{{day}}-{{slug}}'
+    editor:
+      preview: true
+      
+    fields:
+      - label: Title
+        name: title
+      - label: Synopsis
+        name: body
+        widget: markdown 
+      - label: Production Notes
+        name: description
+        hint: "Populates the 'description' field."
+      - label: Publish Date
+        name: publishDate
+        widget: date
+      - label: Expiration Date
+        name: expiryDate
+        widget: date
+      - label: Draft 
+        name: draft
+        widget: boolean
+        default: false
+      - label: Date Range
+        name: dateRange
+      - label: Short Title
+        name: shortTitle
+        required: true
+      - label: One Sheet
+        name: oneSheet
+        widget: file
+        ui: true
+        default: "no-image-available.png"
+        media_library:
+          config:
+            multiple: false
+      - label: Show Type
+        name: showType
+        widget: select
+        options: [ "Cinema", "Animated Cinema", "Live Performance", "Meeting", "Social Event" ]
+      - label: Default Format
+        name: showFormat
+        widget: select
+        options: [ "2D", "3D", "Not Applicable" ]
+      - label: Running Time 
+        name: runningTime
+        widget: number
+        hint: "Enter running time in minutes."
+      - label: "MPAA Rating"   
+        name: mpaaRating
+        widget: select
+        options: [ "G", "PG", "PG-13", "NC-17", "R", "Not Rated" ]
+      - label: Official URL
+        name: officialURL
+      - label: IMDB URL 
+        name: imdbURL 
+      - label: Studio 
+        name: studio 
+      - label: Studio Fee
+        name: studioFee
+        widget: number
+        hint: "Enter fee in US dollars." 
+      - label: Studio Percentage
+        name : studioPercentage
+        widget: number 
+# 
+# performances:
+#   - performance: 
+#     date: 2021-03-28T19:00:00-05:00
+#     format: 2D
+#   - performance: 
+#     date: 2021-03-29T15:00:00-05:00
+#     format: 3D
+#     note: This is a special matinee showing.

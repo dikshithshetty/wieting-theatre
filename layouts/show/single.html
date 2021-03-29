@@ -29,7 +29,7 @@
             <div class="field field--name-field-performance-times field--type-datetime">
               <ul class="show-times">
                 {{ range .Params.performances }}
-                  <li class="field--item">{{ . }}</li>
+                  <li class="field--item">{{ .date }} {{ .note }}</li>
                 {{ end }}    
               </ul>  
               <hr/>
