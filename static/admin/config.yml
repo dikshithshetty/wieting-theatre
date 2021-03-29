@@ -20,72 +20,108 @@ collections:
       preview: true
       
     fields:
+
       - label: Title
         name: title
+        widget: string
+
       - label: Synopsis
         name: body
         widget: markdown 
+
       - label: Production Notes
         name: description
+        widget: string
         hint: "Populates the 'description' field."
+
       - label: Publish Date
         name: publishDate
         widget: date
+
       - label: Expiration Date
         name: expiryDate
         widget: date
-      - label: Draft 
-        name: draft
-        widget: boolean
-        default: false
+
       - label: Date Range
         name: dateRange
+        widget: string
+
       - label: Short Title
         name: shortTitle
         required: true
+        widget: string
+        pattern: ['.{1,20}', "20 characters max."]
+
       - label: One Sheet
         name: oneSheet
-        widget: file
+        widget: image
         ui: true
         default: "no-image-available.png"
         media_library:
           config:
             multiple: false
+
       - label: Show Type
         name: showType
         widget: select
-        options: [ "Cinema", "Animated Cinema", "Live Performance", "Meeting", "Social Event" ]
-      - label: Default Format
-        name: showFormat
-        widget: select
-        options: [ "2D", "3D", "Not Applicable" ]
+        options: [ "Closed", "Cinema", "Animated Cinema", "Live Performance", "Meeting", "Social Event", "Private" ]
+
       - label: Running Time 
         name: runningTime
         widget: number
         hint: "Enter running time in minutes."
+
       - label: "MPAA Rating"   
         name: mpaaRating
         widget: select
         options: [ "G", "PG", "PG-13", "NC-17", "R", "Not Rated" ]
+
       - label: Official URL
         name: officialURL
+        widget: string
+
       - label: IMDB URL 
         name: imdbURL 
-      - label: Studio 
-        name: studio 
-      - label: Studio Fee
-        name: studioFee
-        widget: number
-        hint: "Enter fee in US dollars." 
-      - label: Studio Percentage
-        name : studioPercentage
-        widget: number 
-# 
-# performances:
-#   - performance: 
-#     date: 2021-03-28T19:00:00-05:00
-#     format: 2D
-#   - performance: 
-#     date: 2021-03-29T15:00:00-05:00
-#     format: 3D
-#     note: This is a special matinee showing.
+        widget: string
+      
+      - label: Performances
+        name: performance-list
+        widget: object
+        
+        fields:
+          - label: Performance 
+            name: performance 
+            widget: list
+
+            fields:
+              - { label: When, name: date, widget: datetime }
+              - { label: Format, name: format, widget: select, options: [ "2D", "3D", "Not Applicable" ], required: false }
+              - { label: Peformance Note, name: note, required: false }
+
+      - label: "Studio Info"
+        name: studioInfo 
+        widget: object
+        collapsed: true
+        summary: "{{fields.studio}} - ${{fields.studioFee}} - {{fields.studioPercentage}}%"
+
+        fields:
+          - label: Studio 
+            name: studio 
+            widget: string
+            default: "Not Specified"
+
+          - label: Studio Fee
+            name: studioFee
+            widget: number
+            default: 0
+            hint: "Enter fee in US dollars." 
+
+          - label: Studio Percentage
+            name : studioPercentage
+            widget: number
+            default: 0 
+                    
+      - label: Draft 
+        name: draft
+        widget: boolean
+        default: false
